@@ -26,9 +26,9 @@ class course:
 			if score.groups()[1] == "--":
 				break
 			elif not scoreT[0].isdigit():
-				self.scores[URLbits.groups()[1]] = int(scoreT[1])
+				self.scores[URLbits.groups()[1]] = float(scoreT[1])
 			else:
-				self.scores[URLbits.groups()[1]] = int(scoreT[0])
+				self.scores[URLbits.groups()[1]] = float(scoreT[0])
 		
 	def getName(self):
 		return self.name
